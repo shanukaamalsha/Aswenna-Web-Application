@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>Aswenna - Settings</title>
+    <meta
+      name="description"
+      content="3D Glassmorphism Dashboard Template by TemplateMo"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="templatemo-glass-admin-style.css" />
+    <!--
+
+TemplateMo 607 Glass Admin
+
+https://templatemo.com/tm-607-glass-admin
+
+-->
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img src="logo.png" alt="" style="width: 90%" />
+          </div>
+          <span class="logo-text">Aswenna Admin</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-section">
+            <span class="nav-section-title">Main Menu</span>
+            <ul>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="consultation.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                  Consultation
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="news.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                  </svg>
+                  News Feed
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                  Market Insights
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="users.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Users
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="settings.html" class="nav-link active">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                    />
+                  </svg>
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-section">
+            <span class="nav-section-title">Account</span>
+            <ul>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                  </svg>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <div class="user-profile">
+            <div class="user-avatar" id="sidebar-avatar">TM</div>
+            <div class="user-info">
+              <div class="user-name" id="sidebar-name">TemplateMo</div>
+              <div class="user-role" id="sidebar-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Top Navbar -->
+        <nav class="navbar">
+          <div class="page-header">
+            <h1 class="page-title">Settings</h1>
+            <div class="page-breadcrumb">
+              <a href="dashboard.html">Dashboard</a>
+              <span>/</span>
+              <span>Settings</span>
+            </div>
+          </div>
+          <div class="navbar-right">
+
+            <button
+              class="nav-btn"
+              id="theme-toggle"
+              title="Toggle Light/Dark Mode"
+            >
+              <svg
+                class="icon-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="M4.93 4.93l1.41 1.41" />
+                <path d="M17.66 17.66l1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="M6.34 17.66l-1.41 1.41" />
+                <path d="M19.07 4.93l-1.41 1.41" />
+              </svg>
+              <svg
+                class="icon-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Settings Content -->
+        <div class="settings-grid">
+          <!-- Settings Navigation -->
+          <div class="glass-card settings-nav-card">
+            <ul class="settings-nav">
+              <li class="settings-nav-item">
+                <a href="#" class="settings-nav-link active" data-tab="profile">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                  Profile
+                </a>
+              </li>
+              <li class="settings-nav-item">
+                <a href="#" class="settings-nav-link" data-tab="security">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                  Security
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Settings Content -->
+          <div class="glass-card">
+            <!-- Profile Tab -->
+            <div class="settings-tab-content active" id="tab-profile">
+              <div class="profile-header">
+                <div class="profile-avatar-large" id="profile-large-avatar">
+                  TM
+                  <div class="profile-avatar-edit" id="profile-avatar-edit-btn" style="cursor: pointer;">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                      />
+                    </svg>
+                  </div>
+                  <input type="file" id="profile-image-input" accept="image/*" style="display:none;" />
+                </div>
+                <div class="profile-info">
+                  <h2 id="profile-display-name">TemplateMo</h2>
+                  <p id="profile-display-desc">admin@templatemo.com • Administrator</p>
+                </div>
+              </div>
+
+              <div class="settings-section">
+                <h3 class="settings-section-title">Profile Information</h3>
+                <div class="form-grid">
+                  <div class="form-group-settings">
+                    <label>First Name</label>
+                    <input type="text" id="profile-first-name" value="" />
+                  </div>
+                  <div class="form-group-settings">
+                    <label>Last Name</label>
+                    <input type="text" id="profile-last-name" value="" />
+                  </div>
+                  <div class="form-group-settings">
+                    <label>Email Address</label>
+                    <input type="email" id="profile-email" value="" readonly style="opacity:0.7" />
+                  </div>
+                  <div class="form-group-settings">
+                    <label>Phone Number</label>
+                    <input type="tel" id="profile-phone" value="" />
+                  </div>
+                  <div class="form-group-settings full-width">
+                    <label>Bio</label>
+                    <textarea id="profile-bio"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button id="save-profile-btn" class="btn btn-primary" style="width: auto">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+
+            <!-- Security Tab -->
+            <div class="settings-tab-content" id="tab-security">
+              <div class="settings-section">
+                <h3 class="settings-section-title">Change Password</h3>
+                <div class="form-grid">
+                  <div class="form-group-settings full-width">
+                    <label>Current Password</label>
+                    <input
+                      type="password"
+                      id="current-password"
+                      placeholder="Enter current password"
+                    />
+                  </div>
+                  <div class="form-group-settings">
+                    <label>New Password</label>
+                    <input type="password" id="new-password" placeholder="Enter new password" />
+                  </div>
+                  <div class="form-group-settings">
+                    <label>Confirm New Password</label>
+                    <input type="password" id="confirm-new-password" placeholder="Confirm new password" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button id="update-password-btn" class="btn btn-primary" style="width: auto">
+                  Update Password
+                </button>
+              </div>
+            </div>
+
+            <!-- Appearance Tab -->
+            <div class="settings-tab-content" id="tab-appearance">
+              <div class="settings-section">
+                <h3 class="settings-section-title">Theme</h3>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Color Mode</span>
+                    <span class="settings-label-desc"
+                      >Choose your preferred color mode</span
+                    >
+                  </div>
+                  <select class="settings-select" id="theme-select">
+                    <option value="dark">Dark Mode</option>
+                    <option value="light">Light Mode</option>
+                    <option value="system">System Default</option>
+                  </select>
+                </div>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Accent Color</span>
+                    <span class="settings-label-desc"
+                      >Choose your preferred accent color</span
+                    >
+                  </div>
+                  <select class="settings-select">
+                    <option>Emerald (Default)</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                    <option>Orange</option>
+                    <option>Pink</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="settings-section">
+                <h3 class="settings-section-title">Display</h3>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Compact Mode</span>
+                    <span class="settings-label-desc"
+                      >Reduce spacing for more content</span
+                    >
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Animations</span>
+                    <span class="settings-label-desc"
+                      >Enable smooth animations and transitions</span
+                    >
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Blur Effects</span>
+                    <span class="settings-label-desc"
+                      >Enable glassmorphism blur effects</span
+                    >
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="settings-row">
+                  <div class="settings-label">
+                    <span class="settings-label-title">Floating Orbs</span>
+                    <span class="settings-label-desc"
+                      >Show animated background orbs</span
+                    >
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-primary" style="width: auto">
+                  Apply Changes
+                </button>
+                <button class="btn btn-secondary" style="width: auto">
+                  Reset to Default
+                </button>
+              </div>
+            </div>
+
+            <!-- Billing Tab -->
+            <div class="settings-tab-content" id="tab-billing">
+              <div class="settings-section">
+                <h3 class="settings-section-title">Current Plan</h3>
+                <div
+                  class="billing-plan-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(5, 150, 105, 0.15),
+                      rgba(212, 165, 116, 0.15)
+                    );
+                    padding: 24px;
+                    border-radius: 16px;
+                    margin-bottom: 20px;
+                    border: 1px solid var(--glass-border);
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div>
+                      <h4
+                        style="
+                          font-size: 20px;
+                          font-weight: 600;
+                          margin-bottom: 4px;
+                        "
+                      >
+                        Pro Plan
+                      </h4>
+                      <p style="color: var(--text-muted); font-size: 14px">
+                        Billed monthly
+                      </p>
+                    </div>
+                    <div style="text-align: right">
+                      <span
+                        style="
+                          font-family: &quot;Space Mono&quot;, monospace;
+                          font-size: 32px;
+                          font-weight: 700;
+                        "
+                        >$29</span
+                      >
+                      <span style="color: var(--text-muted)">/month</span>
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: 12px">
+                    <button
+                      class="btn btn-primary"
+                      style="width: auto; padding: 10px 20px"
+                    >
+                      Upgrade Plan
+                    </button>
+                    <button
+                      class="btn btn-secondary"
+                      style="width: auto; padding: 10px 20px"
+                    >
+                      Cancel Subscription
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="settings-section">
+                <h3 class="settings-section-title">Payment Method</h3>
+                <div class="settings-row">
+                  <div
+                    class="settings-label"
+                    style="display: flex; align-items: center; gap: 16px"
+                  >
+                    <div
+                      style="
+                        width: 48px;
+                        height: 32px;
+                        background: linear-gradient(135deg, #1a1f71, #00579f);
+                        border-radius: 6px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <span
+                        style="color: white; font-size: 10px; font-weight: bold"
+                        >VISA</span
+                      >
+                    </div>
+                    <div>
+                      <span class="settings-label-title"
+                        >Visa ending in 4242</span
+                      >
+                      <span class="settings-label-desc">Expires 12/2026</span>
+                    </div>
+                  </div>
+                  <button class="card-btn" style="padding: 6px 12px">
+                    Edit
+                  </button>
+                </div>
+                <div style="margin-top: 16px">
+                  <button
+                    class="btn btn-secondary"
+                    style="width: auto; padding: 10px 20px"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      style="margin-right: 8px"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                    Add Payment Method
+                  </button>
+                </div>
+              </div>
+
+              <div class="settings-section">
+                <h3 class="settings-section-title">Billing History</h3>
+                <div class="table-wrapper" style="margin: 0">
+                  <table class="data-table" style="min-width: 100%">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Invoice</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jan 1, 2025</td>
+                        <td>Pro Plan - Monthly</td>
+                        <td><span class="table-amount">$29.00</span></td>
+                        <td>
+                          <span class="status-badge completed">Paid</span>
+                        </td>
+                        <td>
+                          <a href="#" style="color: var(--emerald-light)"
+                            >Download</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dec 1, 2024</td>
+                        <td>Pro Plan - Monthly</td>
+                        <td><span class="table-amount">$29.00</span></td>
+                        <td>
+                          <span class="status-badge completed">Paid</span>
+                        </td>
+                        <td>
+                          <a href="#" style="color: var(--emerald-light)"
+                            >Download</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nov 1, 2024</td>
+                        <td>Pro Plan - Monthly</td>
+                        <td><span class="table-amount">$29.00</span></td>
+                        <td>
+                          <span class="status-badge completed">Paid</span>
+                        </td>
+                        <td>
+                          <a href="#" style="color: var(--emerald-light)"
+                            >Download</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <script src="templatemo-glass-admin-script.js"></script>
+    <!-- TemplateMo 607 Glass Admin -->
+    
+    <!-- Firebase Settings Management -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyC-OtUg6_wCOCrmU9dwLCRNHq2CFIuw7-E",
+        authDomain: "aswenna-8ed3e.firebaseapp.com",
+        databaseURL: "https://aswenna-8ed3e-default-rtdb.firebaseio.com",
+        projectId: "aswenna-8ed3e",
+        storageBucket: "aswenna-8ed3e.firebasestorage.app",
+        messagingSenderId: "686567450327",
+        appId: "1:686567450327:web:5ab3eed23cd410c16ef292",
+      };
+
+      let database;
+      let currentUser = null;
+
+      try {
+        firebase.initializeApp(firebaseConfig);
+        database = firebase.database();
+        console.log("✅ Firebase Settings initialized");
+      } catch (e) {
+        console.error("❌ Firebase init failed:", e);
+      }
+
+      function checkAuth() {
+        const userData = localStorage.getItem("aswenna_user");
+        const isLoggedIn = localStorage.getItem("aswenna_loggedIn");
+        if (!userData || isLoggedIn !== "true") { window.location.href = "login.html"; return null; }
+        try { return JSON.parse(userData); } catch { window.location.href = "login.html"; return null; }
+      }
+
+      function getInitials(firstName, lastName) {
+        let inits = "";
+        if (firstName) inits += firstName.charAt(0).toUpperCase();
+        if (lastName) inits += lastName.charAt(0).toUpperCase();
+        return inits || "A";
+      }
+
+      function updateUIWithUserData(user) {
+        const initials = getInitials(user.firstName, user.lastName);
+        const fullName = (user.firstName || "") + " " + (user.lastName || "");
+        
+        // Update Sidebar
+        const elSidebarAvatar = document.getElementById("sidebar-avatar");
+        const elSidebarName = document.getElementById("sidebar-name");
+        const elSidebarRole = document.getElementById("sidebar-role");
+        if (elSidebarAvatar) {
+            if (user.profileImageUri) {
+                elSidebarAvatar.innerHTML = `<img src="${user.profileImageUri}" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />`;
+            } else {
+                elSidebarAvatar.textContent = initials;
+            }
+        }
+        if (elSidebarName) elSidebarName.textContent = fullName || "Admin";
+        if (elSidebarRole) elSidebarRole.textContent = user.role === "admin" ? "Administrator" : "User";
+
+        // Update Profile Header
+        const elProfileAvatar = document.getElementById("profile-large-avatar");
+        if (elProfileAvatar) {
+            // Need to preserve the edit icon SVG and file input inside it
+            const editIcon = elProfileAvatar.querySelector(".profile-avatar-edit");
+            const fileInput = elProfileAvatar.querySelector("#profile-image-input");
+            
+            if (user.profileImageUri) {
+                elProfileAvatar.innerHTML = `<img src="${user.profileImageUri}" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />`;
+            } else {
+                elProfileAvatar.textContent = initials;
+            }
+            
+            if (editIcon) elProfileAvatar.appendChild(editIcon);
+            if (fileInput) elProfileAvatar.appendChild(fileInput);
+        }
+        
+        const elProfileName = document.getElementById("profile-display-name");
+        const elProfileDesc = document.getElementById("profile-display-desc");
+        if (elProfileName) elProfileName.textContent = fullName || "Admin User";
+        if (elProfileDesc) elProfileDesc.textContent = (user.email || "") + " • " + (user.role === "admin" ? "Administrator" : "User");
+
+        // Populate Form Inputs
+        const inFirstName = document.getElementById("profile-first-name");
+        const inLastName = document.getElementById("profile-last-name");
+        const inEmail = document.getElementById("profile-email");
+        const inPhone = document.getElementById("profile-phone");
+        const inBio = document.getElementById("profile-bio");
+
+        if (inFirstName) inFirstName.value = user.firstName || "";
+        if (inLastName) inLastName.value = user.lastName || "";
+        if (inEmail) inEmail.value = user.email || "";
+        if (inPhone) inPhone.value = user.phone || "";
+        if (inBio) inBio.value = user.bio || "";
+      }
+
+      async function saveProfileData() {
+        if (!database || !currentUser || !currentUser.userId) {
+          alert("Database connection is not available.");
+          return;
+        }
+
+        const btn = document.getElementById("save-profile-btn");
+        const origText = btn.textContent;
+        btn.textContent = "Saving...";
+        btn.disabled = true;
+
+        const updatedData = {
+          firstName: document.getElementById("profile-first-name").value.trim(),
+          lastName: document.getElementById("profile-last-name").value.trim(),
+          phone: document.getElementById("profile-phone").value.trim(),
+          bio: document.getElementById("profile-bio").value.trim(),
+        };
+
+        try {
+          const userRef = database.ref("users/" + currentUser.userId);
+          await userRef.update(updatedData);
+          
+          // Update local cache
+          const mergedUser = { ...currentUser, ...updatedData };
+          localStorage.setItem("aswenna_user", JSON.stringify(mergedUser));
+          currentUser = mergedUser;
+          
+          updateUIWithUserData(currentUser);
+          alert("✅ Profile updated successfully!");
+        } catch (e) {
+          console.error("Error updating profile:", e);
+          alert("❌ Failed to update profile: " + e.message);
+        } finally {
+          btn.textContent = origText;
+          btn.disabled = false;
+        }
+      }
+
+      async function updatePassword() {
+        if (!database || !currentUser || !currentUser.userId) {
+          alert("Database connection is not available.");
+          return;
+        }
+
+        const currentPassInput = document.getElementById("current-password");
+        const newPassInput = document.getElementById("new-password");
+        const confirmPassInput = document.getElementById("confirm-new-password");
+
+        const currentPass = currentPassInput.value.trim();
+        const newPass = newPassInput.value.trim();
+        const confirmPass = confirmPassInput.value.trim();
+
+        if (!currentPass || !newPass || !confirmPass) {
+          alert("Please fill in all password fields.");
+          return;
+        }
+
+        if (newPass.length < 6) {
+          alert("New password must be at least 6 characters long.");
+          return;
+        }
+
+        if (newPass !== confirmPass) {
+          alert("New passwords do not match.");
+          return;
+        }
+
+        if (newPass === currentPass) {
+          alert("New password must be different from your current password.");
+          return;
+        }
+
+        const btn = document.getElementById("update-password-btn");
+        const origText = btn.textContent;
+        btn.textContent = "Verifying...";
+        btn.disabled = true;
+
+        try {
+          // Always fetch from Firebase to get the real current password
+          const userRef = database.ref("users/" + currentUser.userId);
+          const snapshot = await userRef.once("value");
+          const dbUser = snapshot.val();
+
+          if (!dbUser) {
+            alert("❌ Could not retrieve user data. Please try again.");
+            return;
+          }
+
+          const dbPassword = dbUser.password || "";
+
+          if (dbPassword !== currentPass) {
+            alert("❌ Current password is incorrect. Please try again.");
+            return;
+          }
+
+          btn.textContent = "Updating...";
+
+          // Update password in Firebase
+          await userRef.update({ password: newPass });
+
+          // Update local session cache
+          currentUser.password = newPass;
+          localStorage.setItem("aswenna_user", JSON.stringify(currentUser));
+
+          alert("✅ Password updated successfully! Use your new password on next login.");
+
+          currentPassInput.value = "";
+          newPassInput.value = "";
+          confirmPassInput.value = "";
+
+        } catch (e) {
+          console.error("Error updating password:", e);
+          alert("❌ Failed to update password: " + e.message);
+        } finally {
+          btn.textContent = origText;
+          btn.disabled = false;
+        }
+      }
+
+      function resizeAndCompressImage(file, maxWidth = 300, maxHeight = 300, quality = 0.7) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = (event) => {
+            const img = new Image();
+            img.src = event.target.result;
+            img.onload = () => {
+              const canvas = document.createElement("canvas");
+              let width = img.width;
+              let height = img.height;
+
+              if (width > height) {
+                if (width > maxWidth) {
+                  height = Math.round((height *= maxWidth / width));
+                  width = maxWidth;
+                }
+              } else {
+                if (height > maxHeight) {
+                  width = Math.round((width *= maxHeight / height));
+                  height = maxHeight;
+                }
+              }
+
+              canvas.width = width;
+              canvas.height = height;
+              const ctx = canvas.getContext("2d");
+              ctx.drawImage(img, 0, 0, width, height);
+
+              // Use webp for transparency and compression
+              const dataUrl = canvas.toDataURL("image/webp", quality);
+              resolve(dataUrl);
+            };
+            img.onerror = reject;
+          };
+          reader.onerror = reject;
+        });
+      }
+
+      function initProfileImageUpload() {
+        const editBtn = document.getElementById("profile-avatar-edit-btn");
+        const fileInput = document.getElementById("profile-image-input");
+        if (!editBtn || !fileInput) return;
+        
+        editBtn.addEventListener("click", () => fileInput.click());
+        
+        fileInput.addEventListener("change", async () => {
+          const file = fileInput.files[0];
+          if (!file) return;
+          
+          if (!database || !currentUser || !currentUser.userId) {
+            alert("Database connection is not available.");
+            return;
+          }
+          
+          editBtn.style.opacity = '0.5';
+          
+          try {
+            const base64Image = await resizeAndCompressImage(file);
+            const userRef = database.ref("users/" + currentUser.userId);
+            await userRef.update({ profileImageUri: base64Image });
+            
+            currentUser.profileImageUri = base64Image;
+            localStorage.setItem("aswenna_user", JSON.stringify(currentUser));
+            
+            updateUIWithUserData(currentUser);
+            alert("✅ Profile picture updated successfully!");
+          } catch(e) {
+             console.error("Error updating profile image:", e);
+             alert("❌ Failed to update profile picture: " + e.message);
+          } finally {
+             editBtn.style.opacity = '1';
+             fileInput.value = "";
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        currentUser = checkAuth();
+        if (!currentUser) return;
+        
+        updateUIWithUserData(currentUser);
+        initProfileImageUpload();
+
+        const saveBtn = document.getElementById("save-profile-btn");
+        if (saveBtn) saveBtn.addEventListener("click", saveProfileData);
+
+        const updatePassBtn = document.getElementById("update-password-btn");
+        if (updatePassBtn) updatePassBtn.addEventListener("click", updatePassword);
+      });
+    </script>
+  </body>
+</html>

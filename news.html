@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswenna - News Feed</title>
+    <meta
+      name="description"
+      content="3D Glassmorphism Dashboard Template by TemplateMo"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="templatemo-glass-admin-style.css" />
+    <style>
+      /* Quick table styles specific to CMS */
+      .news-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+      .news-table th, .news-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--glass-border); color: var(--text-main); }
+      .news-table th { background: rgba(255,255,255,0.05); font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
+      .news-table tr:hover { background: rgba(255,255,255,0.02); }
+      .badge { padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; display: inline-block; }
+      .badge-subsidies { background: rgba(5, 150, 105, 0.15); color: #059669; border: 1px solid rgba(5, 150, 105, 0.3); }
+      .badge-weather { background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); }
+      .badge-policies { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+      .action-btns { display: flex; gap: 8px; }
+      .thumbnail-preview { width: 50px; height: 50px; object-fit: cover; border-radius: 8px; border: 1px solid var(--glass-border); }
+      .empty-state { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 1rem; }
+    </style>
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img src="logo.png" alt="" style="width: 90%" />
+          </div>
+          <span class="logo-text">Aswenna Admin</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-section">
+            <span class="nav-section-title">Main Menu</span>
+            <ul>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="consultation.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                  Consultation
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="news.html" class="nav-link active">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                  </svg>
+                  News Feed
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                  Market Insights
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="users.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Users
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-section">
+            <span class="nav-section-title">Account</span>
+            <ul>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                  </svg>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <div class="user-profile">
+            <div class="user-avatar">AD</div>
+            <div class="user-info">
+              <div class="user-name">Admin</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Top Navbar -->
+        <nav class="navbar">
+          <div class="page-header">
+            <h1 class="page-title">News Feed</h1>
+            <div class="page-breadcrumb">
+              <a href="dashboard.html">Dashboard</a>
+              <span>/</span>
+              <span>News Feed</span>
+            </div>
+          </div>
+          <div class="navbar-right">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input type="text" id="news-search-input" class="search-input" placeholder="Search news articles..." oninput="renderTable()" />
+            </div>
+
+            <button class="nav-btn" id="theme-toggle" title="Toggle Light/Dark Mode">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/>
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- News Table Section -->
+        <section style="margin-top: 2rem;">
+          <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h2 class="section-title">Manage News Articles</h2>
+            <button class="btn btn-primary" onclick="openAddModal()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;margin-right:8px;">
+                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+              Add News Article
+            </button>
+          </div>
+
+          <div class="glass-card" style="overflow-x: auto;">
+            <table class="news-table">
+              <thead>
+                <tr>
+                  <th style="width: 70px;">Image</th>
+                  <th>Title & Tagline</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th>Link</th>
+                  <th style="text-align: right; width: 150px;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="news-table-body">
+                <tr><td colspan="6" class="empty-state">Loading articles...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ADD / EDIT MODAL -->
+    <div class="modal-overlay" id="news-modal" style="display: none;">
+      <div class="modal-content glass-card" style="max-width: 600px; max-height: 90vh; overflow-y: auto;">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title">Add News Article</h3>
+          <button class="modal-close" onclick="closeModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        
+        <form id="news-form" onsubmit="handleFormSubmit(event)">
+          <input type="hidden" id="news-id" />
+          <input type="hidden" id="existing-thumbnail" />
+
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label class="form-label">News Thumbnail Image</label>
+              <input type="file" id="news-thumbnail" accept="image/*" class="form-input" style="padding: 10px;" />
+              <div id="thumbnail-preview-container" style="margin-top: 10px; display: none;">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 5px;">Current Image:</p>
+                <img id="current-thumbnail" src="" alt="Thumbnail" style="height: 100px; border-radius: 8px; border: 1px solid var(--glass-border);" />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">News Title</label>
+              <input type="text" id="news-title" class="form-input" placeholder="e.g., Government Announces New Subsidy" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">News Tag Line</label>
+              <input type="text" id="news-tagline" class="form-input" placeholder="e.g., Major relief for farmers..." required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">News Category</label>
+              <select id="news-category" class="form-select" required>
+                <option value="" disabled selected>Select category...</option>
+                <option value="subsidies">Subsidies</option>
+                <option value="weather">Weather</option>
+                <option value="government-policies">Government Policies and Regulations</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">News Date</label>
+              <input type="date" id="news-date" class="form-input" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">View Full Article (URL)</label>
+              <input type="url" id="news-url" class="form-input" placeholder="https://example.com/full-story" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">News Description</label>
+              <textarea id="news-description" class="form-input" rows="4" placeholder="Enter full news description..." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions" style="margin-top: 2rem; display: flex; justify-content: flex-end; gap: 1rem;">
+            <button type="button" class="btn btn-outline" onclick="closeModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Save Article</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="templatemo-glass-admin-script.js"></script>
+    
+    <script>
+      // 1. Check Authentication
+      function checkAuth() {
+        const userData = localStorage.getItem("aswenna_user");
+        const isLoggedIn = localStorage.getItem("aswenna_loggedIn");
+        if (!userData || isLoggedIn !== "true") { window.location.href = "login.html"; return false; }
+        return true;
+      }
+
+      // 2. Firebase Initialization
+      const firebaseConfig = {
+        apiKey: "AIzaSyC-OtUg6_wCOCrmU9dwLCRNHq2CFIuw7-E",
+        authDomain: "aswenna-8ed3e.firebaseapp.com",
+        databaseURL: "https://aswenna-8ed3e-default-rtdb.firebaseio.com",
+        projectId: "aswenna-8ed3e",
+        storageBucket: "aswenna-8ed3e.firebasestorage.app",
+        messagingSenderId: "686567450327",
+        appId: "1:686567450327:web:5ab3eed23cd410c16ef292",
+      };
+
+      let database = null;
+      try {
+        firebase.initializeApp(firebaseConfig);
+        database = firebase.database();
+      } catch(e) {
+        console.error("Firebase init failed:", e);
+      }
+
+      // 3. State
+      let allNews = [];
+
+      // 4. Utility: File to Base64
+      function fileToBase64(file) {
+        return new Promise((resolve, reject) => {
+          const r = new FileReader();
+          r.readAsDataURL(file);
+          r.onload = () => resolve(r.result);
+          r.onerror = reject;
+        });
+      }
+
+      // 5. Render Table
+      function renderTable() {
+        const tbody = document.getElementById("news-table-body");
+        const searchInput = document.getElementById("news-search-input");
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : "";
+
+        let filteredNews = allNews;
+        if (searchTerm) {
+          filteredNews = allNews.filter(item => {
+            const titleMatch = (item.title || "").toLowerCase().includes(searchTerm);
+            const taglineMatch = (item.tagline || "").toLowerCase().includes(searchTerm);
+            return titleMatch || taglineMatch;
+          });
+        }
+
+        if (filteredNews.length === 0) {
+          if (allNews.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="6" class="empty-state">No news articles found. Click "Add News Article" to create one.</td></tr>`;
+          } else {
+            tbody.innerHTML = `<tr><td colspan="6" class="empty-state">No news articles matching your search.</td></tr>`;
+          }
+          return;
+        }
+
+        const catLabels = {
+          "subsidies": "Subsidies",
+          "weather": "Weather",
+          "government-policies": "Gov. Policies"
+        };
+        const catClasses = {
+          "subsidies": "badge-subsidies",
+          "weather": "badge-weather",
+          "government-policies": "badge-policies"
+        };
+
+        tbody.innerHTML = filteredNews.map(item => {
+          const imgHtml = item.thumbnailUri 
+            ? `<img src="${item.thumbnailUri}" class="thumbnail-preview" alt="Thumb"/>` 
+            : `<div class="thumbnail-preview" style="background:#2a3042;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:10px;">No Img</div>`;
+          
+          const catLabel = catLabels[item.category] || item.category;
+          const catClass = catClasses[item.category] || "";
+
+          return `
+            <tr>
+              <td>${imgHtml}</td>
+              <td>
+                <div style="font-weight:600;font-size:0.95rem;">${item.title || "Untitled"}</div>
+                <div style="color:var(--text-muted);font-size:0.8rem;margin-top:4px;">${item.tagline || ""}</div>
+              </td>
+              <td><span class="badge ${catClass}">${catLabel}</span></td>
+              <td style="color:var(--text-muted);font-size:0.9rem;">${item.date || ""}</td>
+              <td>
+                ${item.url ? `<a href="${item.url}" target="_blank" style="color:var(--emerald-light);text-decoration:none;font-size:0.85rem;">Read full →</a>` : "-"}
+              </td>
+              <td style="text-align: right;">
+                <div class="action-btns" style="justify-content: flex-end;">
+                  <button class="btn btn-outline btn-sm" onclick="openEditModal('${item.id}')" style="border-color:var(--emerald-light);color:var(--emerald-light);padding:4px 10px;">Edit</button>
+                  <button class="btn btn-outline btn-sm" onclick="deleteNews('${item.id}')" style="border-color:#ff6b6b;color:#ff6b6b;padding:4px 10px;">Delete</button>
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join("");
+      }
+
+      // 6. Modal Functions
+      function openAddModal() {
+        document.getElementById("news-form").reset();
+        document.getElementById("news-id").value = "";
+        document.getElementById("existing-thumbnail").value = "";
+        document.getElementById("thumbnail-preview-container").style.display = "none";
+        document.getElementById("modal-title").textContent = "Add News Article";
+        document.getElementById("news-modal").style.display = "flex";
+      }
+
+      function openEditModal(id) {
+        const item = allNews.find(n => n.id === id);
+        if (!item) return;
+        
+        document.getElementById("news-id").value = item.id;
+        document.getElementById("news-title").value = item.title || "";
+        document.getElementById("news-tagline").value = item.tagline || "";
+        document.getElementById("news-category").value = item.category || "";
+        document.getElementById("news-date").value = item.date || "";
+        document.getElementById("news-url").value = item.url || "";
+        document.getElementById("news-description").value = item.description || "";
+        
+        const existingThumbInput = document.getElementById("existing-thumbnail");
+        const previewContainer = document.getElementById("thumbnail-preview-container");
+        const previewImg = document.getElementById("current-thumbnail");
+        
+        if (item.thumbnailUri) {
+          existingThumbInput.value = item.thumbnailUri;
+          previewImg.src = item.thumbnailUri;
+          previewContainer.style.display = "block";
+        } else {
+          existingThumbInput.value = "";
+          previewContainer.style.display = "none";
+        }
+
+        document.getElementById("modal-title").textContent = "Edit News Article";
+        document.getElementById("news-modal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("news-modal").style.display = "none";
+        document.getElementById("news-form").reset();
+      }
+
+      // 7. Form Submission (Add / Edit)
+      async function handleFormSubmit(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById("submit-btn");
+        const origText = btn.textContent;
+        btn.textContent = "Saving...";
+        btn.disabled = true;
+
+        try {
+          const id = document.getElementById("news-id").value;
+          const title = document.getElementById("news-title").value.trim();
+          const tagline = document.getElementById("news-tagline").value.trim();
+          const category = document.getElementById("news-category").value;
+          const date = document.getElementById("news-date").value;
+          const url = document.getElementById("news-url").value.trim();
+          const description = document.getElementById("news-description").value.trim();
+          
+          const fileInput = document.getElementById("news-thumbnail");
+          let thumbnailUri = document.getElementById("existing-thumbnail").value;
+
+          if (fileInput.files.length > 0) {
+            thumbnailUri = await fileToBase64(fileInput.files[0]);
+          }
+
+          const data = {
+            title, tagline, category, date, url, description, thumbnailUri,
+            updatedAt: firebase.database.ServerValue.TIMESTAMP
+          };
+
+          if (id) {
+            // Edit existing
+            await database.ref("news/" + id).update(data);
+          } else {
+            // Add new
+            data.createdAt = firebase.database.ServerValue.TIMESTAMP;
+            data.createdBy = "admin";
+            const newRef = database.ref("news").push();
+            data.id = newRef.key;
+            await newRef.set(data);
+          }
+          closeModal();
+        } catch (err) {
+          console.error("Save error:", err);
+          alert("Failed to save article: " + err.message);
+        } finally {
+          btn.textContent = origText;
+          btn.disabled = false;
+        }
+      }
+
+      // 8. Delete News
+      async function deleteNews(id) {
+        const item = allNews.find(n => n.id === id);
+        if (!item || !confirm(`Are you sure you want to delete "${item.title}"?`)) return;
+
+        try {
+          await database.ref("news/" + id).remove();
+        } catch(err) {
+          alert("Failed to delete: " + err.message);
+        }
+      }
+
+      // 9. Load Data
+      function listenToData() {
+        if (!database) return;
+        database.ref("news").on("value", snapshot => {
+          allNews = [];
+          snapshot.forEach(child => {
+            allNews.push({ id: child.key, ...child.val() });
+          });
+          // Sort newest date first
+          allNews.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+          renderTable();
+        });
+      }
+
+      // On Load
+      window.onload = () => {
+        if (checkAuth()) {
+          listenToData();
+        }
+      };
+    </script>
+  </body>
+</html>

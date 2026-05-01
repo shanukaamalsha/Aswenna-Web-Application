@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswenna - Dashboard</title>
+    <meta
+      name="description"
+      content="3D Glassmorphism Dashboard Template by TemplateMo"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="templatemo-glass-admin-style.css" />
+    <!--
+
+TemplateMo 607 Glass Admin
+
+https://templatemo.com/tm-607-glass-admin
+
+-->
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img src="logo.png" alt="" style="width: 90%" />
+          </div>
+          <span class="logo-text">Aswenna Admin</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-section">
+            <span class="nav-section-title">Main Menu</span>
+            <ul>
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link active">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="consultation.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                  Consultation
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="news.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                  </svg>
+                  News Feed
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                  Market Insights
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="users.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Users
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                    />
+                  </svg>
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-section">
+            <span class="nav-section-title">Account</span>
+            <ul>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                  </svg>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <div class="user-profile">
+            <div class="user-avatar">TM</div>
+            <div class="user-info">
+              <div class="user-name">TemplateMo</div>
+              <div class="user-role">Administrator</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Top Navbar -->
+        <nav class="navbar">
+          <h1 class="page-title">Dashboard Overview</h1>
+          <div class="navbar-right">
+            <div class="search-box">
+              <svg
+                class="search-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search anything..."
+              />
+            </div>
+
+            <button
+              class="nav-btn"
+              id="theme-toggle"
+              title="Toggle Light/Dark Mode"
+            >
+              <svg
+                class="icon-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="M4.93 4.93l1.41 1.41" />
+                <path d="M17.66 17.66l1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="M6.34 17.66l-1.41 1.41" />
+                <path d="M19.07 4.93l-1.41 1.41" />
+              </svg>
+              <svg
+                class="icon-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                style="display: none"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+          <div class="glass-card glass-card-3d stat-card">
+            <div class="stat-card-inner">
+              <div class="stat-info">
+                <h3>Total Advisors</h3>
+                <div class="stat-value" id="stat-total-advisors">—</div>
+                <span class="stat-change positive">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  <span id="stat-active-advisors-sub">Syncing...</span>
+                </span>
+              </div>
+              <div class="stat-icon cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--emerald-light)" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card glass-card-3d stat-card">
+            <div class="stat-card-inner">
+              <div class="stat-info">
+                <h3>Registered Users</h3>
+                <div class="stat-value" id="stat-total-users">—</div>
+                <span class="stat-change positive">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  <span id="stat-users-sub">Syncing...</span>
+                </span>
+              </div>
+              <div class="stat-icon magenta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card glass-card-3d stat-card">
+            <div class="stat-card-inner">
+              <div class="stat-info">
+                <h3>Cultivated Land</h3>
+                <div class="stat-value" id="stat-total-land">—</div>
+                <span class="stat-change positive">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  <span id="stat-land-sub">Syncing...</span>
+                </span>
+              </div>
+              <div class="stat-icon purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card glass-card-3d stat-card">
+            <div class="stat-card-inner">
+              <div class="stat-info">
+                <h3>Active Machinery</h3>
+                <div class="stat-value" id="stat-machinery-count">—</div>
+                <span class="stat-change positive">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  <span id="stat-machinery-available">Syncing...</span>
+                </span>
+              </div>
+              <div class="stat-icon success">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--success)"
+                  stroke-width="2"
+                >
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="content-grid">
+          <!-- Chart Card -->
+          <div class="glass-card chart-card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Paddy Variety Price Insights</h2>
+                <p class="card-subtitle">Real-time market prices (LKR per kg)</p>
+              </div>
+              <div class="card-actions">
+                <button class="card-btn active" onclick="setChartMode('avg', this)">Averages</button>
+                <button class="card-btn" onclick="setChartMode('buy', this)">Buying</button>
+                <button class="card-btn" onclick="setChartMode('sell', this)">Selling</button>
+              </div>
+            </div>
+            <div class="chart-wrapper">
+              <div class="chart-container">
+                <div class="chart-y-axis">
+                  <span class="y-value">350</span>
+                  <span class="y-value">280</span>
+                  <span class="y-value">210</span>
+                  <span class="y-value">140</span>
+                  <span class="y-value">70</span>
+                  <span class="y-value">0</span>
+                </div>
+                <div class="chart-placeholder" id="paddy-price-chart">
+                  <p style="color:var(--text-muted);width:100%;text-align:center;padding:2rem 0;">Syncing variety data...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity Feed -->
+          <div class="glass-card activity-card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Recent Updates</h2>
+                <p class="card-subtitle">Latest platform actions</p>
+              </div>
+            </div>
+            <div class="activity-list" id="news-list">
+              <!-- Dynamically filled with trade posts or user registrations -->
+              <p style="color:var(--text-muted);text-align:center;padding:2rem 0;">Loading activity...</p>
+            </div>
+          </div>
+
+          <!-- Data Table -->
+          <div class="glass-card table-card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Marketplace Activity</h2>
+                <p class="card-subtitle">Recent trade posts</p>
+              </div>
+              <div class="card-actions">
+                <button class="card-btn">View All</button>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Paddy Type</th>
+                    <th>Role</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody id="trade-table-body">
+                  <!-- Dynamically filled -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Donut Chart -->
+          <div class="glass-card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Market Supply vs Demand</h2>
+                <p class="card-subtitle">Aggregated trade quantities</p>
+              </div>
+            </div>
+            <div class="donut-container">
+              <div class="donut-chart">
+                <svg width="140" height="140" viewBox="0 0 140 140">
+                  <circle class="donut-bg" cx="70" cy="70" r="54" />
+                  <circle
+                    id="donut-supply"
+                    class="donut-segment"
+                    cx="70"
+                    cy="70"
+                    r="54"
+                    stroke="var(--emerald-light)"
+                    stroke-dasharray="0 339.3"
+                    stroke-dashoffset="0"
+                  />
+                  <circle
+                    id="donut-demand"
+                    class="donut-segment"
+                    cx="70"
+                    cy="70"
+                    r="54"
+                    stroke="var(--gold)"
+                    stroke-dasharray="0 339.3"
+                    stroke-dashoffset="0"
+                  />
+                </svg>
+                <div class="donut-center">
+                  <div class="donut-value" id="trade-total-qty">0</div>
+                  <div class="donut-label">Total Kg</div>
+                </div>
+              </div>
+              <div class="donut-legend">
+                <div class="legend-item">
+                  <span class="legend-color cyan"></span><span id="supply-label">Supply (Farmer)</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color magenta"></span><span id="demand-label">Demand (Buyer)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Card -->
+          <div class="glass-card progress-card">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title">Crop Cycle Progress</h2>
+                <p class="card-subtitle">Current status distribution</p>
+              </div>
+            </div>
+            <div id="crop-cycle-list">
+              <!-- Dynamically filled -->
+              <div class="progress-item">
+                <div class="progress-header">
+                  <span class="progress-label">Seeding</span><span class="progress-value">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill cyan" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <span class="progress-label">Growth</span><span class="progress-value">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill magenta" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-header">
+                  <span class="progress-label">Harvesting</span><span class="progress-value">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill purple" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <script src="templatemo-glass-admin-script.js"></script>
+
+    <!-- Firebase Compat SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+    <!-- Dashboard Analytics Script -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyC-OtUg6_wCOCrmU9dwLCRNHq2CFIuw7-E",
+        authDomain: "aswenna-8ed3e.firebaseapp.com",
+        databaseURL: "https://aswenna-8ed3e-default-rtdb.firebaseio.com",
+        projectId: "aswenna-8ed3e",
+        storageBucket: "aswenna-8ed3e.firebasestorage.app",
+        messagingSenderId: "686567450327",
+        appId: "1:686567450327:web:5ab3eed23cd410c16ef292",
+        measurementId: "G-BMM9EH874B",
+      };
+
+      const app = firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+
+      // ── Helpers ────────────────────────────────────────────────────
+      function setText(id, val) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      }
+
+      function timeAgo(ts) {
+        if (!ts) return "";
+        let date;
+        if (typeof ts === 'number') date = new Date(ts);
+        else if (!isNaN(ts)) date = new Date(parseInt(ts));
+        else date = new Date(ts);
+        
+        if (isNaN(date.getTime())) return "";
+        
+        const diff = Date.now() - date.getTime();
+        const mins = Math.floor(diff / 60000);
+        if (mins < 1) return "just now";
+        if (mins < 60) return `${mins}m ago`;
+        const hrs = Math.floor(mins / 60);
+        if (hrs < 24) return `${hrs}h ago`;
+        return `${Math.floor(hrs / 24)}d ago`;
+      }
+
+      // ── 1. Total Advisors ──────────────────────────────────────────
+      db.ref("advisors").on("value", (snap) => {
+        let total = 0;
+        let active = 0;
+        snap.forEach(child => {
+          total++;
+          if ((child.val().status || "").toLowerCase() === "active") active++;
+        });
+        setText("stat-total-advisors", total);
+        setText("stat-active-advisors-sub", `${active} active`);
+      });
+
+      // ── 2. Registered Users ────────────────────────────────────────
+      db.ref("users").on("value", (snap) => {
+        let total = 0;
+        let farmers = 0;
+        let buyers = 0;
+        snap.forEach(child => {
+          total++;
+          const role = (child.val().role || "").toLowerCase();
+          if (role === "farmer") farmers++;
+          else if (role === "buyer") buyers++;
+        });
+        setText("stat-total-users", total);
+        setText("stat-users-sub", `${farmers} Farmers, ${buyers} Buyers`);
+      });
+
+      // ── 3. Cultivated Land & Crop Progress ────────────────────────
+      db.ref("harvestLogs").on("value", (snap) => {
+        let totalLand = 0;
+        const phases = { "Seeding": 0, "Growth": 0, "Harvesting": 0, "Other": 0 };
+        let count = 0;
+
+        snap.forEach(child => {
+          const log = child.val();
+          totalLand += parseFloat(log.landSize) || 0;
+          const phase = log.currentPhase || "Other";
+          if (phases.hasOwnProperty(phase)) phases[phase]++;
+          else phases["Other"]++;
+          count++;
+        });
+
+        setText("stat-total-land", totalLand.toFixed(1));
+        setText("stat-land-sub", `${count} active logs`);
+
+        // Update Crop Cycle Progress Bars
+        const cycleList = document.getElementById("crop-cycle-list");
+        if (cycleList && count > 0) {
+          const phaseConfig = [
+            { label: "Seeding", color: "cyan" },
+            { label: "Growth", color: "magenta" },
+            { label: "Harvesting", color: "purple" }
+          ];
+          cycleList.innerHTML = phaseConfig.map(p => {
+            const pct = Math.round((phases[p.label] / count) * 100);
+            return `
+              <div class="progress-item">
+                <div class="progress-header">
+                  <span class="progress-label">${p.label}</span><span class="progress-value">${pct}%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill ${p.color}" style="width: ${pct}%"></div>
+                </div>
+              </div>`;
+          }).join("");
+        }
+      });
+
+      // ── 4. Active Machinery ────────────────────────────────────────
+      db.ref("machineryBookings").on("value", (snap) => {
+        let total = 0;
+        let available = 0;
+        snap.forEach(child => {
+          const m = child.val();
+          total++;
+          if (m.status === "Available Now") available++;
+        });
+        setText("stat-machinery-count", available);
+        setText("stat-machinery-available", `${total} registered`);
+      });
+
+      // ── Recent Updates (News Feed Only) ───────────────────────────
+      db.ref("news").on("value", (snap) => {
+        const newsList = document.getElementById("news-list");
+        if (!newsList) return;
+
+        const articles = [];
+        snap.forEach(child => articles.push({ id: child.key, ...child.val() }));
+
+        // Sort by timestamp (most recent first)
+        const sorted = articles.sort((a, b) => {
+          const tA = new Date(a.publishedAt || a.createdAt || a.timestamp).getTime() || 0;
+          const tB = new Date(b.publishedAt || b.createdAt || b.timestamp).getTime() || 0;
+          return tB - tA;
+        });
+
+        if (sorted.length === 0) {
+          newsList.innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:2rem 0;">No updates available</p>';
+          return;
+        }
+
+        newsList.innerHTML = sorted.slice(0, 6).map(n => `
+          <div class="activity-item" style="padding:.85rem; background:rgba(255,255,255,0.05); border-radius:12px; margin-bottom:10px; border: 1px solid var(--glass-border); transition: all 0.3s ease;">
+            <div style="display:flex; gap:12px; align-items:center;">
+              <div style="width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, #059669, #34d399); display:flex; align-items:center; justify-content:center; flex-shrink:0; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width:18px; height:18px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div style="flex:1; min-width:0;">
+                <p style="margin:0; font-weight:600; font-size:14px; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${n.title || "Announcement"}</p>
+                <p style="margin:0; font-size:11px; color:var(--text-muted);">${timeAgo(n.publishedAt || n.createdAt || n.timestamp)}</p>
+              </div>
+            </div>
+          </div>`).join("");
+      });
+
+      // ── Paddy Variety Price Analysis (Advanced) ─────────────────
+      let currentChartMode = 'avg'; // avg, buy, sell
+      let globalPaddyTypes = [];
+      let globalTrades = [];
+
+      function setChartMode(mode, btn) {
+        currentChartMode = mode;
+        document.querySelectorAll('.chart-card .card-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderPriceChart();
+      }
+
+      function renderPriceChart() {
+        const chartPlaceholder = document.getElementById("paddy-price-chart");
+        if (!chartPlaceholder) return;
+
+        if (globalPaddyTypes.length === 0) {
+          chartPlaceholder.innerHTML = '<p style="color:var(--text-muted);width:100%;text-align:center;padding:2rem 0;">No variety data available</p>';
+          return;
+        }
+
+        const barColors = ["#059669", "#d4a574", "#e07a5f", "#0ea5e9", "#8b5cf6", "#f43f5e", "#10b981", "#f59e0b", "#6366f1"];
+        
+        chartPlaceholder.innerHTML = globalPaddyTypes.map((t, i) => {
+          let price = 0;
+          
+          // Calculate based on mode
+          if (currentChartMode === 'buy') {
+            const buyerTrades = globalTrades.filter(tr => tr.paddyType === t.name && tr.role === 'buyer');
+            if (buyerTrades.length > 0) {
+              price = buyerTrades.reduce((sum, tr) => sum + parseFloat(tr.pricePerKg), 0) / buyerTrades.length;
+            } else {
+              price = parseFloat(t.minValue || t.price || 0);
+            }
+          } else if (currentChartMode === 'sell') {
+            const sellerTrades = globalTrades.filter(tr => tr.paddyType === t.name && tr.role === 'farmer');
+            if (sellerTrades.length > 0) {
+              price = sellerTrades.reduce((sum, tr) => sum + parseFloat(tr.pricePerKg), 0) / sellerTrades.length;
+            } else {
+              price = parseFloat(t.maxValue || t.price || 0);
+            }
+          } else {
+            // Averages
+            const allTrades = globalTrades.filter(tr => tr.paddyType === t.name);
+            if (allTrades.length > 0) {
+              price = allTrades.reduce((sum, tr) => sum + parseFloat(tr.pricePerKg), 0) / allTrades.length;
+            } else {
+              price = parseFloat(t.price || 0);
+            }
+          }
+
+          const height = Math.min((price / 350) * 200, 200);
+          return `
+            <div class="chart-bar-group">
+              <div class="chart-bar" style="height: ${height}px; background: linear-gradient(180deg, ${barColors[i % barColors.length]}dd, ${barColors[i % barColors.length]});" title="${t.name} (${currentChartMode}): ${price.toFixed(1)} LKR/kg"></div>
+              <span class="chart-label" title="${t.name}">${t.name}</span>
+            </div>`;
+        }).join("");
+      }
+
+      db.ref("paddyTypes").on("value", (snap) => {
+        globalPaddyTypes = [];
+        snap.forEach(child => {
+          const d = child.val();
+          if (d && d.name) globalPaddyTypes.push({ name: d.name, ...d });
+        });
+        renderPriceChart();
+      });
+
+      db.ref("tradePosts").on("value", (snap) => {
+        globalTrades = [];
+        const trades = [];
+        snap.forEach(child => {
+          const val = child.val();
+          globalTrades.push(val);
+          trades.push(val);
+        });
+
+        let supplyQty = 0;
+        let demandQty = 0;
+        const sortedTrades = [...trades].sort((a, b) => (b.createdTimestamp || 0) - (a.createdTimestamp || 0));
+
+        trades.forEach(t => {
+          const qty = parseFloat(t.availableQty) || 0;
+          if (t.role === "farmer") supplyQty += qty;
+          else if (t.role === "buyer") demandQty += qty;
+        });
+
+        renderPriceChart();
+
+        // Supply/Demand Donut
+        const totalQty = supplyQty + demandQty;
+        setText("trade-total-qty", totalQty.toLocaleString());
+        const circumference = 339.3;
+        const supplyArc = totalQty > 0 ? (supplyQty / totalQty) * circumference : 0;
+        const demandArc = totalQty > 0 ? (demandQty / totalQty) * circumference : 0;
+        const donutSupply = document.getElementById("donut-supply");
+        const donutDemand = document.getElementById("donut-demand");
+        if (donutSupply) donutSupply.setAttribute("stroke-dasharray", `${supplyArc.toFixed(1)} ${circumference.toFixed(1)}`);
+        if (donutDemand) {
+          donutDemand.setAttribute("stroke-dasharray", `${demandArc.toFixed(1)} ${circumference.toFixed(1)}`);
+          donutDemand.setAttribute("stroke-dashoffset", `-${supplyArc.toFixed(1)}`);
+        }
+        setText("supply-label", `Supply (${Math.round((supplyQty/totalQty)*100 || 0)}%)`);
+        setText("demand-label", `Demand (${Math.round((demandQty/totalQty)*100 || 0)}%)`);
+
+        // Marketplace Table
+        const tableBody = document.getElementById("trade-table-body");
+        if (tableBody) {
+          tableBody.innerHTML = sortedTrades.slice(0, 8).map(t => `
+            <tr>
+              <td>
+                <div class="table-user">
+                  <div class="table-avatar" style="background: linear-gradient(135deg, var(--emerald), var(--gold)); font-size: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight:bold;">
+                    ${(t.creatorName || "U").charAt(0).toUpperCase()}
+                  </div>
+                  <div class="table-user-info"><span class="table-user-name">${t.creatorName || "User"}</span></div>
+                </div>
+              </td>
+              <td>${t.paddyType}</td>
+              <td><span class="status-badge ${t.role === 'farmer' ? 'completed' : 'processing'}">${t.role}</span></td>
+              <td>${t.availableQty} kg</td>
+              <td><span class="table-amount">Rs. ${t.pricePerKg}</span></td>
+            </tr>
+          `).join("");
+        }
+
+        // Note: Marketplace table is updated above. No need to fight over news-list ID.
+      });
+    </script>
+
+    <!-- TemplateMo 607 Glass Admin -->
+  </body>
+</html>

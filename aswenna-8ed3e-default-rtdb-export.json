@@ -1,0 +1,459 @@
+{
+  "budgetTransactions": {
+    "-OplZMJlQMqT1eVh__en": {
+      "amount": 200,
+      "createdTimestamp": 1775726852557,
+      "id": "-OplZMJlQMqT1eVh__en",
+      "name": "Test",
+      "type": "Income",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    },
+    "-OplZQ-9K4NTdFONe1ol": {
+      "amount": 100,
+      "createdTimestamp": 1775726867622,
+      "id": "-OplZQ-9K4NTdFONe1ol",
+      "name": "test",
+      "type": "Expense",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    },
+    "-OplbZmCxCMsk83YKqVb": {
+      "amount": 251,
+      "createdTimestamp": 1775727694114,
+      "id": "-OplbZmCxCMsk83YKqVb",
+      "name": "yaka",
+      "type": "Income",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    }
+  },
+  "buyers": {
+    "-OphCCOMvqk9-fz_-GA0": {
+      "businessAddress": "Uyanda, kurunegala",
+      "businessName": "Lanka Sal Supermarket",
+      "userId": "-OphCCOMvqk9-fz_-GA0"
+    },
+    "-OqxzjjvWt01Y34FPb0U": {
+      "businessAddress": "Maho",
+      "businessName": "වික්‍රමසිංහ සහ පුත්‍රයෝ",
+      "userId": "-OqxzjjvWt01Y34FPb0U"
+    },
+    "-Oqy4zhVm-CmlGHuxINs": {
+      "businessAddress": "Maho",
+      "businessName": "වික්‍රමසිංහ සහ පුත්‍රයෝ",
+      "userId": "-Oqy4zhVm-CmlGHuxINs"
+    }
+  },
+  "farmers": {
+    "-OphALJQhoo-vENlbN1R": {
+      "userId": "-OphALJQhoo-vENlbN1R"
+    },
+    "-OqPDVlvSAqmc721DOyS": {
+      "userId": "-OqPDVlvSAqmc721DOyS"
+    },
+    "-OqxhgyZdVGV1GBttW4B": {
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    }
+  },
+  "harvestLogs": {
+    "-OplKOxznIB4UT48zptG": {
+      "createdTimestamp": 1775722931317,
+      "cropName": "Samba",
+      "currentPhase": "Seeding",
+      "dayProgress": "0 / 113",
+      "elapsedDays": 0,
+      "estimatedIncome": "LKR 7220000",
+      "harvestDate": "31 Jul 2026",
+      "harvestDurationText": "Apr - Jul",
+      "harvestStatus": "Active Crop",
+      "landSize": 10,
+      "logId": "-OplKOxznIB4UT48zptG",
+      "season": "Maha",
+      "startDate": "10 Apr 2026",
+      "totalDays": 113,
+      "userId": "-OphALJQhoo-vENlbN1R"
+    }
+  },
+  "machineryBookings": {
+    "-OphDqpBh_DTZ5pnUH0j": {
+      "amount": "1500",
+      "bookingId": "-OphDqpBh_DTZ5pnUH0j",
+      "district": "Galle",
+      "imageUri": "content://media/external_primary/images/media/1000039286",
+      "machineCategory": "Harvester",
+      "machineName": "450 Harvester",
+      "status": "Week Ends",
+      "userId": "-OphCCOMvqk9-fz_-GA0"
+    },
+    "-Oqy-cnjtXfvZxuC82AS": {
+      "amount": "20000",
+      "bookingId": "-Oqy-cnjtXfvZxuC82AS",
+      "district": "Kurunegala",
+      "imageUri": "content://media/external/images/media/116293",
+      "machineCategory": "Harvester",
+      "machineName": "wubota combine harvester",
+      "status": "Available Now",
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    },
+    "-OqyA72UqCTw0hduO6mX": {
+      "amount": "12",
+      "bookingId": "-OqyA72UqCTw0hduO6mX",
+      "district": "Galle",
+      "imageUri": "content://media/external_primary/images/media/1000041099",
+      "machineCategory": "Thresher",
+      "machineName": "vvs",
+      "status": "Available Now",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    }
+  },
+  "message": "Aswenna Connection Established!",
+  "messages": {
+    "-OphALJQhoo-vENlbN1R_-OphCCOMvqk9-fz_-GA0": {
+      "-OphDKEqM7tuq8BwsPnr": {
+        "message": "Hello මම කැමති ඔයාගෙන් වි මිලදීගන්න",
+        "messageId": "-OphDKEqM7tuq8BwsPnr",
+        "senderId": "-OphCCOMvqk9-fz_-GA0",
+        "senderName": "Shanuka",
+        "timestamp": 1775653967955,
+        "type": 1
+      },
+      "-OphFXc0kTjB9F94FN5v": {
+        "message": "වි මිලට ගතහැකි මේ සතියේ තුළ",
+        "messageId": "-OphFXc0kTjB9F94FN5v",
+        "senderId": "-OphALJQhoo-vENlbN1R",
+        "senderName": "Chamod",
+        "timestamp": 1775654547044,
+        "type": 1
+      },
+      "-OphHBAy4DgM6Rb_D8jv": {
+        "message": "message",
+        "messageId": "-OphHBAy4DgM6Rb_D8jv",
+        "senderId": "-OphALJQhoo-vENlbN1R",
+        "senderName": "Chamod",
+        "timestamp": 1775654979459,
+        "type": 1
+      }
+    },
+    "-OphALJQhoo-vENlbN1R_-OqxhgyZdVGV1GBttW4B": {
+      "-Oqxihr7UAMCyYRuYHrX": {
+        "message": "RS. 195 ට කරමුද",
+        "messageId": "-Oqxihr7UAMCyYRuYHrX",
+        "senderId": "-OqxhgyZdVGV1GBttW4B",
+        "senderName": "kasun",
+        "timestamp": 1777004631860,
+        "type": 1
+      },
+      "-OqxirGvy6uWn78j2lwI": {
+        "message": "ඔක්කොම එහෙම උනොත් ගන්න්වා",
+        "messageId": "-OqxirGvy6uWn78j2lwI",
+        "senderId": "-OqxhgyZdVGV1GBttW4B",
+        "senderName": "kasun",
+        "timestamp": 1777004670440,
+        "type": 1
+      }
+    },
+    "-OphCCOMvqk9-fz_-GA0_-OqxhgyZdVGV1GBttW4B": {
+      "-Oqxj9nEduCr3oZww9kK": {
+        "message": "රහශ",
+        "messageId": "-Oqxj9nEduCr3oZww9kK",
+        "senderId": "-OqxhgyZdVGV1GBttW4B",
+        "senderName": "kasun",
+        "timestamp": 1777004750396,
+        "type": 1
+      },
+      "-OqxjD9vxemiEa2xRmvr": {
+        "message": "mkk",
+        "messageId": "-OqxjD9vxemiEa2xRmvr",
+        "senderId": "-OphCCOMvqk9-fz_-GA0",
+        "senderName": "Shanuka",
+        "timestamp": 1777004765661,
+        "type": 1
+      },
+      "-OqxjTP6-K3MvAC2QiCw": {
+        "message": "khmd",
+        "messageId": "-OqxjTP6-K3MvAC2QiCw",
+        "senderId": "-OphCCOMvqk9-fz_-GA0",
+        "senderName": "Shanuka",
+        "timestamp": 1777004832211,
+        "type": 1
+      },
+      "-OqxjUrW6-yqv2newCbW": {
+        "message": "නෘඈකෑතෑ",
+        "messageId": "-OqxjUrW6-yqv2newCbW",
+        "senderId": "-OqxhgyZdVGV1GBttW4B",
+        "senderName": "kasun",
+        "timestamp": 1777004836686,
+        "type": 1
+      }
+    }
+  },
+  "paddyTypes": {
+    "-Opb4XXWvUEkZmTfLTXh": {
+      "id": "-Opb4XXWvUEkZmTfLTXh",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "maxValue": 260,
+      "minValue": 190,
+      "name": "Samba"
+    },
+    "-Opb4XXXlOLXbs9tCSKz": {
+      "id": "-Opb4XXXlOLXbs9tCSKz",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QL6D-FbK95YyCRjM0hOefDtFY44T3qjfdQ&s",
+      "maxValue": 230,
+      "minValue": 170,
+      "name": "Nadu"
+    },
+    "-Opb4XXXlOLXbs9tCSL-": {
+      "id": "-Opb4XXXlOLXbs9tCSL-",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYYv1PxO0C_ByRNpn8p-yLb92n_PYEg3xzw&s",
+      "maxValue": 280,
+      "minValue": 210,
+      "name": "Keeri Samba"
+    }
+  },
+  "socialFeedPosts": {
+    "-OqxnRnew78Z4ewldv3j": {
+      "dateTime": "24/04/2026 at 10:14 AM",
+      "description": "මම මේ ඇප් කියලා තියෙන විදියටම වැඩ කරන්න ගත්තා. මම වපුරන දවසෙ ඉඳන් ඇප් එක update කරන්න ගත්තා. දැන් මට පොහොර ගහන්න, තෙල් ගහන්න වගේ ඒවා මේකෙන් කලින්ම කියනවා. මේක මාරම වටින ඇප් එකක්.",
+      "dislikes": 0,
+      "imageUri": "content://media/external/images/media/115224",
+      "likes": 0,
+      "ownerImageUri": "",
+      "ownerName": "kasun vijesingha",
+      "postId": "-OqxnRnew78Z4ewldv3j",
+      "timestamp": 1777005872738,
+      "title": "සති දෙකක මගෙ වගාව. 😎😎🤟",
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    }
+  },
+  "socialFeedReactions": {
+    "-OphEyOZ7gDzfnxNfrlR": {
+      "-OphCCOMvqk9-fz_-GA0": "like"
+    },
+    "-OqxnRnew78Z4ewldv3j": {
+      "-OphALJQhoo-vENlbN1R": "dislike",
+      "-OqxhgyZdVGV1GBttW4B": "like",
+      "-Oqy4zhVm-CmlGHuxINs": "like"
+    }
+  },
+  "tradePosts": {
+    "-OphBG_ueVDAkx825Ptd": {
+      "availableQty": 400,
+      "createdAt": "08 Apr 2026",
+      "createdTimestamp": 1775653429571,
+      "creatorName": "Chamod",
+      "creatorProfileImageUri": "content://media/external_primary/images/media/1000036701",
+      "paddyType": "Samba",
+      "pricePerKg": 200,
+      "role": "farmer",
+      "tradeId": "-OphBG_ueVDAkx825Ptd",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    },
+    "-OphCbWI-A89xgMNR9VY": {
+      "availableQty": 120,
+      "createdAt": "08 Apr 2026",
+      "createdTimestamp": 1775653781567,
+      "creatorName": "Lanka Sal Supermarket",
+      "creatorProfileImageUri": "content://media/external_primary/images/media/1000033866",
+      "paddyType": "Samba",
+      "pricePerKg": 200,
+      "role": "buyer",
+      "tradeId": "-OphCbWI-A89xgMNR9VY",
+      "userId": "-OphCCOMvqk9-fz_-GA0"
+    },
+    "-OphCxkIdRfLA8Wp92LE": {
+      "availableQty": 400,
+      "createdAt": "08 Apr 2026",
+      "createdTimestamp": 1775653873253,
+      "creatorName": "Lanka Sal Supermarket",
+      "creatorProfileImageUri": "content://media/external_primary/images/media/1000033866",
+      "paddyType": "Nadu",
+      "pricePerKg": 210,
+      "role": "buyer",
+      "tradeId": "-OphCxkIdRfLA8Wp92LE",
+      "userId": "-OphCCOMvqk9-fz_-GA0"
+    },
+    "-OqxkoZ1lzm5mpbNKbMN": {
+      "availableQty": 1000,
+      "createdAt": "24 Apr 2026",
+      "createdTimestamp": 1777005184077,
+      "creatorName": "kasun",
+      "creatorProfileImageUri": "",
+      "paddyType": "Nadu",
+      "pricePerKg": 170,
+      "role": "farmer",
+      "tradeId": "-OqxkoZ1lzm5mpbNKbMN",
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    },
+    "-Oqxkx_cJXW-yjlNRLW4": {
+      "availableQty": 1500,
+      "createdAt": "24 Apr 2026",
+      "createdTimestamp": 1777005221194,
+      "creatorName": "kasun",
+      "creatorProfileImageUri": "",
+      "paddyType": "Samba",
+      "pricePerKg": 200,
+      "role": "farmer",
+      "tradeId": "-Oqxkx_cJXW-yjlNRLW4",
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    }
+  },
+  "userChats": {
+    "-OphALJQhoo-vENlbN1R": {
+      "-OphALJQhoo-vENlbN1R_-OphCCOMvqk9-fz_-GA0": {
+        "chatId": "-OphALJQhoo-vENlbN1R_-OphCCOMvqk9-fz_-GA0",
+        "lastMessage": "message",
+        "lastMessageTime": 1775654979795,
+        "lockedUserId": "-OphALJQhoo-vENlbN1R",
+        "otherUserId": "-OphCCOMvqk9-fz_-GA0",
+        "otherUserName": "Shanuka",
+        "otherUserProfileImage": "content://media/external_primary/images/media/1000033866",
+        "otherUserRole": "buyer"
+      },
+      "-OphALJQhoo-vENlbN1R_-OqxhgyZdVGV1GBttW4B": {
+        "chatId": "-OphALJQhoo-vENlbN1R_-OqxhgyZdVGV1GBttW4B",
+        "lastMessage": "ඔක්කොම එහෙම උනොත් ගන්න්වා",
+        "lastMessageTime": 1777004670834,
+        "lockedUserId": "-OphALJQhoo-vENlbN1R",
+        "otherUserId": "-OqxhgyZdVGV1GBttW4B",
+        "otherUserName": "kasun",
+        "otherUserProfileImage": "",
+        "otherUserRole": "farmer"
+      }
+    },
+    "-OphCCOMvqk9-fz_-GA0": {
+      "-OphALJQhoo-vENlbN1R_-OphCCOMvqk9-fz_-GA0": {
+        "chatId": "-OphALJQhoo-vENlbN1R_-OphCCOMvqk9-fz_-GA0",
+        "lastMessage": "message",
+        "lastMessageTime": 1775654979795,
+        "lockedUserId": "-OphCCOMvqk9-fz_-GA0",
+        "otherUserId": "-OphALJQhoo-vENlbN1R",
+        "otherUserName": "Chamod",
+        "otherUserProfileImage": "content://media/external_primary/images/media/1000036701",
+        "otherUserRole": "farmer"
+      },
+      "-OphCCOMvqk9-fz_-GA0_-OqxhgyZdVGV1GBttW4B": {
+        "chatId": "-OphCCOMvqk9-fz_-GA0_-OqxhgyZdVGV1GBttW4B",
+        "lastMessage": "නෘඈකෑතෑ",
+        "lastMessageTime": 1777004837038,
+        "lockedUserId": "-OphCCOMvqk9-fz_-GA0",
+        "otherUserId": "-OqxhgyZdVGV1GBttW4B",
+        "otherUserName": "kasun",
+        "otherUserProfileImage": "",
+        "otherUserRole": "farmer"
+      }
+    },
+    "-OqxhgyZdVGV1GBttW4B": {
+      "-OphALJQhoo-vENlbN1R_-OqxhgyZdVGV1GBttW4B": {
+        "chatId": "-OphALJQhoo-vENlbN1R_-OqxhgyZdVGV1GBttW4B",
+        "lastMessage": "ඔක්කොම එහෙම උනොත් ගන්න්වා",
+        "lastMessageTime": 1777004670834,
+        "lockedUserId": "-OqxhgyZdVGV1GBttW4B",
+        "otherUserId": "-OphALJQhoo-vENlbN1R",
+        "otherUserName": "Chamod Arunalu",
+        "otherUserProfileImage": "content://media/external_primary/images/media/1000036701",
+        "otherUserRole": "farmer"
+      },
+      "-OphCCOMvqk9-fz_-GA0_-OqxhgyZdVGV1GBttW4B": {
+        "chatId": "-OphCCOMvqk9-fz_-GA0_-OqxhgyZdVGV1GBttW4B",
+        "lastMessage": "නෘඈකෑතෑ",
+        "lastMessageTime": 1777004837038,
+        "lockedUserId": "-OqxhgyZdVGV1GBttW4B",
+        "otherUserId": "-OphCCOMvqk9-fz_-GA0",
+        "otherUserName": "Shanuka",
+        "otherUserProfileImage": "content://media/external_primary/images/media/1000033866",
+        "otherUserRole": "buyer"
+      }
+    }
+  },
+  "users": {
+    "-OphALJQhoo-vENlbN1R": {
+      "address": "Mawatagama, kurunegala",
+      "district": "Kurunegala",
+      "email": "chamod@gmail.com",
+      "firstName": "Chamod",
+      "lastName": "Arunalu",
+      "nic": "200780981577",
+      "password": "Chamod123#",
+      "phone": "0754420112",
+      "profileImageUri": "content://media/external_primary/images/media/1000036701",
+      "role": "farmer",
+      "userId": "-OphALJQhoo-vENlbN1R"
+    },
+    "-OphCCOMvqk9-fz_-GA0": {
+      "address": "Uyanda, Galle",
+      "district": "Galle",
+      "email": "shanuka@gmail.com",
+      "firstName": "Shanuka",
+      "lastName": "Amalsha",
+      "nic": "200196102255",
+      "password": "Shanu123##",
+      "phone": "0705528801",
+      "profileImageUri": "content://media/external_primary/images/media/1000033866",
+      "role": "buyer",
+      "userId": "-OphCCOMvqk9-fz_-GA0"
+    },
+    "-OqPDVlvSAqmc721DOyS": {
+      "address": "vzhs",
+      "district": "Matale",
+      "email": "gzvzb@gmil.com",
+      "firstName": "gzh",
+      "lastName": "bsbs",
+      "nic": "2158484",
+      "password": "Test123#",
+      "phone": "2158484444",
+      "profileImageUri": "",
+      "role": "farmer",
+      "userId": "-OqPDVlvSAqmc721DOyS"
+    },
+    "-OqxhgyZdVGV1GBttW4B": {
+      "address": "galgamuwa",
+      "district": "Kurunegala",
+      "email": "kasun@gmail.com",
+      "firstName": "kasun",
+      "lastName": "vijesingha",
+      "nic": "200412365489",
+      "password": "Kasu@1234",
+      "phone": "7215685493",
+      "profileImageUri": "",
+      "role": "farmer",
+      "userId": "-OqxhgyZdVGV1GBttW4B"
+    },
+    "-OqxzjjvWt01Y34FPb0U": {
+      "address": "Maho",
+      "district": "Kurunegala",
+      "email": "nadun@gmail.com",
+      "firstName": "Nadun",
+      "lastName": "Vikramadingha",
+      "nic": "199687412365",
+      "password": "Nadu@1234",
+      "phone": "7533658486",
+      "profileImageUri": "",
+      "role": "buyer",
+      "userId": "-OqxzjjvWt01Y34FPb0U"
+    },
+    "-Oqy4zhVm-CmlGHuxINs": {
+      "address": "Maho",
+      "district": "Kurunegala",
+      "email": "nadu@gmail.cim",
+      "firstName": "nadun",
+      "lastName": "Viktlramsingha",
+      "nic": "199365883649",
+      "password": "Nadu@1234",
+      "phone": "7533665559",
+      "profileImageUri": "",
+      "role": "buyer",
+      "userId": "-Oqy4zhVm-CmlGHuxINs"
+    },
+    "-OqzAdminUser12345678": {
+      "address": "Admin Office, Colombo",
+      "district": "Colombo",
+      "email": "admin@aswenna.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "nic": "000000000000",
+      "password": "Admin@123456",
+      "phone": "0700000000",
+      "profileImageUri": "",
+      "role": "admin",
+      "userId": "-OqzAdminUser12345678"
+    }
+  }
+}
