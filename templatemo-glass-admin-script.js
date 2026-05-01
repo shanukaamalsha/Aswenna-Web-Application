@@ -222,6 +222,9 @@
         // Skip external links
         if (link.hostname !== window.location.hostname) return;
 
+        // Skip logout links - handled separately
+        if (link.textContent.trim().toLowerCase().includes("logout")) return;
+
         e.preventDefault();
         const href = link.getAttribute("href");
 
@@ -588,6 +591,17 @@
       const isLoginPage = window.location.pathname.includes("login.html");
       const isHomePage = window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/");
 
+      // Check for logout query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('logout')) {
+        localStorage.removeItem("aswenna_user");
+        localStorage.removeItem("aswenna_loggedIn");
+        if (!isLoginPage) {
+          window.location.href = "login.html";
+        }
+        return;
+      }
+
       if (!isLoggedIn || !userData) {
         if (!isLoginPage && !isHomePage) {
           window.location.href = "login.html";
@@ -599,10 +613,13 @@
       }
     },
     logout: function(e) {
-      if (e) e.preventDefault();
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
       localStorage.removeItem("aswenna_user");
       localStorage.removeItem("aswenna_loggedIn");
-      window.location.href = "login.html";
+      window.location.href = "login.html?logout=true";
     }
   };
 
@@ -625,7 +642,7 @@
     initSidebarProfile();
 
     // Attach logout handlers to any logout links
-    document.querySelectorAll('a[href="login.html"]').forEach(link => {
+    document.querySelectorAll('a').forEach(link => {
       if (link.textContent.trim().toLowerCase().includes("logout")) {
         link.addEventListener("click", AswennaSession.logout);
       }

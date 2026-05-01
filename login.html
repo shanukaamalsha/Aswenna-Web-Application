@@ -19,6 +19,12 @@
     <script>
       // Session management redirect
       (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('logout')) {
+          localStorage.removeItem("aswenna_loggedIn");
+          localStorage.removeItem("aswenna_user");
+          return;
+        }
         const isLoggedIn = localStorage.getItem("aswenna_loggedIn") === "true";
         if (isLoggedIn) {
           window.location.href = "dashboard.html";
